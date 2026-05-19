@@ -10,7 +10,7 @@ Date: May 19, 2026
 """
 expenses = []
 
-amount = input("Enter amount: $")
+amount = int(input("Enter amount: "))
 
 category = input("enter category. ( food, travel, etc): ")
 
