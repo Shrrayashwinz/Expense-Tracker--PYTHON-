@@ -50,7 +50,6 @@ while True:
 
     elif option == "4":
         print("Have an awesome day!")
-        break
     
     else:
         print("Invalid Choice")

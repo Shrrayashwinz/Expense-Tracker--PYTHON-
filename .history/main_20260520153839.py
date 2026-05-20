@@ -8,6 +8,7 @@ Purpose: Main file for the expense tracker.
 Date: May 19, 2026
 
 """
+import json
 
 expenses = []
 
@@ -32,11 +33,11 @@ while True:
     print("3. view total spending")
     print("4. Exit")
 
-    option = input("Select option: ")
+    option = int(input("Select option: "))
 
 
     if option == "1":
-        amount = float(input("Enter amount: $"))
+        amount = float(input("Enter amount:"))
         category = input("enter category. ( food, travel, etc): ")
 
         print ("Amount:", amount, "Category:", category)
@@ -50,7 +51,6 @@ while True:
 
     elif option == "4":
         print("Have an awesome day!")
-        break
     
     else:
         print("Invalid Choice")

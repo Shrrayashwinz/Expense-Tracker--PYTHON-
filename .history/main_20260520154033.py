@@ -36,7 +36,7 @@ while True:
 
 
     if option == "1":
-        amount = float(input("Enter amount: $"))
+        amount = float(input("Enter amount:"))
         category = input("enter category. ( food, travel, etc): ")
 
         print ("Amount:", amount, "Category:", category)
@@ -50,7 +50,6 @@ while True:
 
     elif option == "4":
         print("Have an awesome day!")
-        break
     
     else:
         print("Invalid Choice")

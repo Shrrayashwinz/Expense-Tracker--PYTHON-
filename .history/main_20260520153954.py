@@ -32,11 +32,11 @@ while True:
     print("3. view total spending")
     print("4. Exit")
 
-    option = input("Select option: ")
+    option = int(input("Select option: "))
 
 
     if option == "1":
-        amount = float(input("Enter amount: $"))
+        amount = float(input("Enter amount:"))
         category = input("enter category. ( food, travel, etc): ")
 
         print ("Amount:", amount, "Category:", category)
