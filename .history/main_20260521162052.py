@@ -12,24 +12,9 @@ Date: May 19, 2026
 
 #import os
 
-def load_data():
-    pass
-
-#----------------FUNCTIONS==========================
 
 def add_expense():
-    try: 
-        amount = input("Enter amount: $")
-    except ValueError:
-        print("!!ERROR!!")
-        return
-    category = input("enter category. ( food, travel, etc): ")
-
-    expenses = ("Amount:", amount, "Category:", category)
-
-    expenses.append(expenses)
-
-
+    pass
 
 def view_expense():
     pass

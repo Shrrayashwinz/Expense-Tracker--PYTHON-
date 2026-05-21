@@ -8,35 +8,6 @@ Purpose: Main file for the expense tracker.
 Date: May 19, 2026
 
 """
-#import json
-
-#import os
-
-def load_data():
-    pass
-
-#----------------FUNCTIONS==========================
-
-def add_expense():
-    try: 
-        amount = input("Enter amount: $")
-    except ValueError:
-        print("!!ERROR!!")
-        return
-    category = input("enter category. ( food, travel, etc): ")
-
-    expenses = ("Amount:", amount, "Category:", category)
-
-    expenses.append(expenses)
-
-
-
-def view_expense():
-    pass
-
-
-def total_spending():
-    pass
 
 expenses = []
 
@@ -54,16 +25,11 @@ x = "world"
 
 print(w, x)
 
-#-------------------------------------
-# main function
-#-------------------------------------
 
 def main():
- 
- expenses = load_data()
 
  while True:
-    print("\nWelcome to the Expense tracker")
+    print("Welcome to the Expense tracker")
     print("1. add expense")
     print("2. view expenses")
     print("3. view total spending")
