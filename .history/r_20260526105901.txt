@@ -1,0 +1,18 @@
+def total_spending(expenses):
+    total = sum(e["amount"] for e in expenses)
+    print(f"\nTotal spending: ${total}")
+
+
+def category_breakdown(expenses):
+    if not expenses:
+        print("No expenses recorded.")
+        return
+
+    breakdown = {}
+    for e in expenses:
+        cat = e["category"]
+        breakdown[cat] = breakdown.get(cat, 0) + e["amount"]
+
+    print("\n--- Category Breakdown ---")
+    for cat, amt in breakdown.items():
+        print(f"{cat.capitalize()}: ${amt}")

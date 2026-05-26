@@ -17,7 +17,7 @@ def load_data():
 
 #----------------FUNCTIONS==========================
 
-def add_expense(expenses):
+def add_expense():
     try: 
         amount = input("Enter amount: $")
     except ValueError:
@@ -31,28 +31,20 @@ def add_expense(expenses):
 
 
 
-def view_expense(expenses):
+def view_expense():
     if expenses is None:
         print("No expenses to see here!")
         return
     
-
-    print("\n----------Expenses----------")
-    for e in expenses:
-        print(f"${e['amount']} - {e['category']}")
+    else:
+        print("\n----------Expenses----------")
         
 
 
 
 
-def total_spending(expenses):
-    total = sum(e["amount"] for e in expenses)
-    print("Total Spending amounts to", total)
-
-def category_breakdown(expenses):
-    if not expenses:
-        print("No expenses recorded.")
-        return
+def total_spending():
+    pass
 
 expenses = []
 
