@@ -19,7 +19,7 @@ def save_data():
     pass
 #----------------FUNCTIONS==========================
 
-def add_expenses(expenses):
+def add_expense(expenses):
     try: 
         amount = input("Enter amount: $")
     except ValueError:
@@ -31,12 +31,9 @@ def add_expenses(expenses):
 
     expenses.append(expenses)
 
-    save_data(expenses)
-    print("Your expense has been added!")
 
 
-
-def view_expenses(expenses):
+def view_expense(expenses):
     if expenses is None:
         print("No expenses to see here!")
         return
@@ -77,9 +74,9 @@ def category_breakdown(expenses):
 
 def main():
  
-  expenses = load_data()
+ expenses = load_data()
 
-  while True:
+ while True:
     print("\nWelcome to the Expense tracker")
     print("1. add expense")
     print("2. view expenses")
@@ -95,16 +92,12 @@ def main():
 
         print ("Amount:", amount, "Category:", category)
 
-        add_expenses(expenses)
-
     elif option == "2":
         print(category, amount)
-        view_expenses(expenses)
     
     elif option == "3":
         total_spending = amount
         print(amount)
-        total_spending(expenses)
 
     elif option == "4":
         print("Have an awesome day!")

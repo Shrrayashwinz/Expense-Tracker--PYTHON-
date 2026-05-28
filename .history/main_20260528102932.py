@@ -19,7 +19,7 @@ def save_data():
     pass
 #----------------FUNCTIONS==========================
 
-def add_expenses(expenses):
+def add_expense(expenses):
     try: 
         amount = input("Enter amount: $")
     except ValueError:
@@ -36,7 +36,7 @@ def add_expenses(expenses):
 
 
 
-def view_expenses(expenses):
+def view_expense(expenses):
     if expenses is None:
         print("No expenses to see here!")
         return
@@ -95,16 +95,12 @@ def main():
 
         print ("Amount:", amount, "Category:", category)
 
-        add_expenses(expenses)
-
     elif option == "2":
         print(category, amount)
-        view_expenses(expenses)
     
     elif option == "3":
         total_spending = amount
         print(amount)
-        total_spending(expenses)
 
     elif option == "4":
         print("Have an awesome day!")
