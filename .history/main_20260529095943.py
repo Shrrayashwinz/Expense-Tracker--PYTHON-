@@ -40,8 +40,8 @@ def add_expenses(expenses):
         return
     category = input("enter category. ( food, travel, etc): ").strip.lower()
 
-    expense = ("amount:", amount, "category:", category)
-    expenses.append(expense)
+    expenses = ("Amount:", amount, "Category:", category)
+    expenses.append(expenses)
 
     save_data(expenses)
     print("Your expense has been added!")
@@ -71,7 +71,7 @@ def category_breakdown(expenses):
         print("No expenses recorded.")
         return
     
-    breakdown = {}
+    breakdown = []
 
     for e in expenses:
         cat = e["category"]

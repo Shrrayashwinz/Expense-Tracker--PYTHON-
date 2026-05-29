@@ -38,10 +38,10 @@ def add_expenses(expenses):
     except ValueError:
         print("!!ERROR!!")
         return
-    category = input("enter category. ( food, travel, etc): ").strip.lower()
+    category = input("enter category. ( food, travel, etc): ")
 
-    expense = ("amount:", amount, "category:", category)
-    expenses.append(expense)
+    expenses = ("Amount:", amount, "Category:", category)
+    expenses.append(expenses)
 
     save_data(expenses)
     print("Your expense has been added!")
@@ -71,7 +71,7 @@ def category_breakdown(expenses):
         print("No expenses recorded.")
         return
     
-    breakdown = {}
+    breakdown = []
 
     for e in expenses:
         cat = e["category"]
@@ -107,17 +107,16 @@ def main():
 
         print ("Amount:", amount, "Category:", category)
 
-        save_data(expenses)
+        add_expenses(expenses)
 
     elif option == "2":
         print(category, amount)
         view_expenses(expenses)
     
     elif option == "3":
+        total_spending = amount
         print(amount)
         total_spending(expenses)
-
-
 
     elif option == "4":
         print("Have an awesome day!")
