@@ -6,5 +6,9 @@
     {
         "amount": 77.55,
         "category": "travel"
+    },
+    {
+        "amount": 33.11,
+        "category": "chipotle (food)"
     }
 ]
