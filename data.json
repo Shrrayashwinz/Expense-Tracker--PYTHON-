@@ -10,5 +10,17 @@
     {
         "amount": 33.11,
         "category": "chipotle (food)"
+    },
+    {
+        "amount": 16.89,
+        "category": "food"
+    },
+    {
+        "amount": 777.66,
+        "category": "food"
+    },
+    {
+        "amount": 3.45,
+        "category": "travel"
     }
 ]
